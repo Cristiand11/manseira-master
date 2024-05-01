@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Relatórios de Despesas</title>
+    <link rel="stylesheet" href="relatorio.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Inserir Relatórios de Despesas</h2>
+        <!-- Formulário para inserir informações sobre o relatório de despesas -->
+        <form id="relatorioForm">
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" required>
+            </div>
+            <button type="submit" class="btn">Adicionar Relatório</button>
+            <button id="enviarBtn" class="btn">Enviar Despesas</button>
+        </form>
+
+        <!-- Lista de relatórios de despesas -->
+        <ul id="relatoriosList"></ul>
+    </div>
+
+    <script src="inserir-relatorio.js"></script>
+</body>
+</html>

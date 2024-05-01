@@ -1,0 +1,66 @@
+/* Reset de estilos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+/* Estilos para o título */
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para a lista de despesas */
+#despesasList {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para os itens da lista de despesas */
+#despesasList li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o botão de assinar despesas */
+#assinarBtn {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#assinarBtn:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+}
+
+/* Estilos para o botão de sair */
+#voltar {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#voltar:hover {
+    background-color: #c82333; 
+}

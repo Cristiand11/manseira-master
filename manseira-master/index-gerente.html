@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard do Gerente</title>
+    <link rel="stylesheet" href="index-gerente.css">
+</head>
+<body>   
+    <main>
+        <section>
+            <h2>Opções do Gerente</h2>
+            <div class="options">
+                <div class="option">
+                    <a href="assinar-relatorios-gerente.html">Assinar Relatórios</a>
+                </div>
+                <div class="option">
+                    <button id="logoutBtn">Sair</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('logoutBtn').addEventListener('click', function() {
+            localStorage.removeItem('userData');
+            window.location.href = 'login.html';
+        });
+    });
+    </script>
+</body>
+</html>
